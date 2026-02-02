@@ -27,10 +27,6 @@ project-files = ["build/gnat/sdlada.gpr"] #, "build/gnat/"]
   macports = { SDL_PLATFORM = "macos_ports" }
   '...'    = { SDL_PLATFORM = "macosx" }
 
-[[actions]]
-  type = "pre-build"
-  command = ["make", "-C", "./build/gnat", "tools"]
-
 [[depends-on]]
   libsdl2 = "^2.0.0"
   make = "*" # Required for post-fetch actions
